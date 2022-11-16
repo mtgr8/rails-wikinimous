@@ -1,0 +1,10 @@
+<h2><%= @article.title %></h2>
+<p><%= @article.content %></p>
+
+<%= link_to "Delete", article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+<br>
+<br>
+<%= link_to "Edit the article", edit_path %>
+<br>
+<br>
+<%= link_to "Return to the index", articles_path %>
